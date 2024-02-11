@@ -1,0 +1,166 @@
+.about-film {
+  position: relative;
+  width: 900px;
+  padding: 380px 0 40px 40px;
+  color: #ffffff;
+}
+.about-film__overlay {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border-radius: 16px 16px 0 0;
+  height: 560px;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 3.65%,
+      rgba(0, 0, 0, 0) 47.89%,
+      rgba(11, 11, 11, 0.463503) 64.1%,
+      #181818 94.02%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24));
+}
+.about-film__background {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border-radius: 16px 16px 0 0;
+
+  img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+}
+.about-film__content {
+  position: relative;
+  z-index: 2;
+}
+.about-film__name {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 1px;
+
+  max-width: 700px;
+
+  margin-bottom: 24px;
+}
+.about-film__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 356px;
+  width: 100%;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #161615;
+  }
+  margin-bottom: 24px;
+}
+
+.about-film__watch {
+  padding: 12px 62px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+  &-img {
+    width: 18px;
+    height: 18px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  span {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    background: rgba(115, 115, 115, 0.7);
+  }
+}
+.about-film__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover {
+    border: 1px solid rgba(115, 115, 115, 0.7);
+  }
+  &-img {
+    width: 18px;
+    height: 18px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.about-film__stars {
+  display: flex;
+  margin-bottom: 16px;
+}
+.about-film__year {
+  padding-left: 32px;
+  position: relative;
+  &:after {
+    content: "";
+    height: 13px;
+    width: 1px;
+    background: #ffffff;
+
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.about-film__age {
+  max-width: 50px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  margin-bottom: 16px;
+}
+.about-film__genres {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(115, 115, 115, 1);
+
+  margin-bottom: 16px;
+}
+.about-film__genre:not(:last-child) {
+  padding-right: 12px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(115, 115, 115, 1);
+  }
+}
+.about-film__genre:not(:first-child) {
+  margin-left: 8px;
+}
+.about-film__desc {
+  max-width: 630px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
