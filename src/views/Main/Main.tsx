@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.scss";
-import { Col, Row } from "antd";
 import popularFilms from "./popularFilms";
-import FilmItem from "./components/FilmItem/FilmItem";
 import MainRow from "./components/MainRow/MainRow";
 import watchedFilms from "./watchedFilms";
 import { AppState, useAppDispatch, useAppSelector } from "../../store/store";
-import { useSelector } from "react-redux";
 import LoadingOverlay from "react-loading-overlay";
 import AboutFilmModal from "../../modals/AboutFilmModal/AboutFilmModal";
 import { getAboutFilm, resetSelectedFilm } from "../../store/slices/slice";

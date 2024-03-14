@@ -1,4 +1,3 @@
-import React from "react";
 import burgerIcon from "../../../assets/header/burger.svg";
 
 const BurgerMenu = () => {

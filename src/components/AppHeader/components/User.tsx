@@ -1,4 +1,3 @@
-import React from "react";
 import userImg from "../../../assets/header/compressedUser.jpg";
 import arrowDownIcon from "../../../assets/header/arrow-down.svg";
 

@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { SearchFilmService } from "../../services/SearchFilmService";
-import IFilmItem from "../../views/Main/components/FilmItem/FilmItem";
 import { FilmState } from "./type";
 
 export const getFilms = createAsyncThunk(
